@@ -9,6 +9,11 @@ class MarklogicFlux < Formula
     depends_on "openjdk@17" => :optional
   
     def install
+
+      inreplace "bin/flux" do |s|
+        s.gsub!(/^CLASSPATH="(.*)"/, 'CLASSPATH="\1:$HOME/.flux/ext"')
+      end
+
       bin.install "bin/flux"
 
       prefix.install_metafiles
