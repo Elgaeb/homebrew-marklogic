@@ -1,8 +1,8 @@
 class MarklogicFlux < Formula
     desc "Application for all of your data movement use cases with MarkLogic"
     homepage "https://marklogic.github.io/flux/"
-    url "https://github.com/marklogic/flux/releases/download/1.1.2/marklogic-flux-1.1.2.zip"
-    sha256 "dd2c891e64ef0f849b9ed63ce5f84c499bfb59c0e9322fc846ada4ffaa1f1ba8"
+    url "https://github.com/marklogic/flux/releases/download/1.1.3/marklogic-flux-1.1.3.zip"
+    sha256 "ccdb0b59d189add7cacafb618b1c34b0f11a59489afbc2f17547e2f3c5ec2da3"
     license "Apache-2.0"
   
     depends_on "openjdk@11" => :optional
