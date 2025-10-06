@@ -26,7 +26,7 @@ class MarklogicFlux < Formula
     def install
 
       inreplace "bin/flux" do |s|
-        s.gsub!(/^CLASSPATH="(.*)"/, 'CLASSPATH="\1:$APP_HOME/libexec/*:$HOME/.flux/ext"')
+        s.gsub!(/^CLASSPATH="(.*)"/, 'CLASSPATH="\1:$APP_HOME/libexec/*:$HOME/.flux/ext/*"')
       end
 
       bin.install "bin/flux"
