@@ -26,14 +26,14 @@ class MarklogicFlux < Formula
     def install
 
       inreplace "bin/flux" do |s|
-        s.gsub!(/^CLASSPATH="(.*)"/, 'CLASSPATH="\1:$HOME/.flux/ext"')
+        s.gsub!(/^CLASSPATH="(.*)"/, 'CLASSPATH="\1:$APP_HOME/libexec/*:$HOME/.flux/ext"')
       end
 
       bin.install "bin/flux"
 
       prefix.install_metafiles
       (prefix/"ext").install Dir["ext/*"]
-      (prefix/"lib").install Dir["lib/*"]
+      libexec.install Dir["lib/*"]
       (prefix/"conf").install Dir["conf/*"]
 
       # resource("embedding-model-azure-open-ai").do { 
