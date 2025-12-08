@@ -1,8 +1,8 @@
 class MarklogicMlcp < Formula
     desc "The fastest way to import, export, and copy data to or from MarkLogic databases."
     homepage "https://developer.marklogic.com/products/mlcp/"
-    url "https://developer.marklogic.com/download/binaries/mlcp/mlcp-12.0.0-bin.zip"
-    sha256 "6f8c319350519ccaea2881963b0d0655084f27ecd81d4b3fffd301fbc3c6f83d"
+    url "https://developer.marklogic.com/download/binaries/mlcp/mlcp-12.0.1-bin.zip"
+    sha256 "b62a565e831b2c6baca2a412ab6460546baab808193501383f314b6a478d17bb"
     license "Apache-2.0"
   
     depends_on "openjdk@11" => :optional
